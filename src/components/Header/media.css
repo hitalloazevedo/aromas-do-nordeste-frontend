@@ -132,7 +132,7 @@
         margin: 0;
     }
 
-    .menu > nav > ul > li > a {
+    .menu > nav > ul > li > .link {
         color: var(--white) !important;
         text-decoration: none;
         font-size: 1.2rem;
