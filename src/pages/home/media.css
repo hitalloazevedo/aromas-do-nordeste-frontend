@@ -31,12 +31,6 @@
     #home .welcome h2 {
         font-size: 4rem;
     }
-
-    #footer {
-        background: url('../../assets/footer800.jpg') no-repeat;
-        background-size: cover;
-        height: 270px;
-    }
 }
 @media screen and (min-width: 1001px) {
     #home {
@@ -56,11 +50,5 @@
 
     #home .welcome h2 {
         font-size: 4.5rem;
-    }
-
-    #footer {
-        background: url('../../assets/background.jpg') no-repeat;
-        background-size: cover;
-        height: 270px;
     }
 }
