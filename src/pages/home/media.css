@@ -38,3 +38,29 @@
         height: 270px;
     }
 }
+@media screen and (min-width: 1001px) {
+    #home {
+        background: url('../../assets/background.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 90vh;
+    }
+
+    #home .container > h1 {
+        font-size: 3rem;
+    }
+
+    #home .welcome h3 {
+        font-size: 3rem;
+    }
+
+    #home .welcome h2 {
+        font-size: 4.5rem;
+    }
+
+    #footer {
+        background: url('../../assets/background.jpg') no-repeat;
+        background-size: cover;
+        height: 270px;
+    }
+}
