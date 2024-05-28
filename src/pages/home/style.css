@@ -45,30 +45,30 @@
 
 #aboutus {
     color: var(--dark-brown);
-    margin-top: 5rem;
-    scroll-margin-top: 4rem;
 }
 
-#aboutus header {
-    height: 6rem;
+#aboutus > .title {
+    height: 8rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    margin-bottom: 2rem;
 }
 
-#aboutus header h2 {
+#aboutus > .title h2 {
     text-align: center;
     font-size: 2rem;
 }
 
-#aboutus body {
+#aboutus > .content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#aboutus body p {
+#aboutus > .content p {
     width: 90vw;
+    max-width: 800px;
     font-size: 1.1rem;
     text-align: justify;
     line-height: 1.8rem;
