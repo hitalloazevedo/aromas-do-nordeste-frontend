@@ -27,7 +27,7 @@ const Dashboard = () => {
         <>
             <h1 className='title'>Dashboard</h1>
             <div className="newPlate">
-                <Link className='newPlateButton' to={'/dashboard/new'}>Adicionar prato</Link>
+                <Link className='newPlateButton' to={'/aromas-do-nordeste-frontend/dashboard/new'}>Adicionar prato</Link>
             </div>
             <div className="platesContainer">
                 {data != undefined ? data.map(plate => {

@@ -11,10 +11,14 @@ const Footer = ({option}) => {
         {option ? <>
             <Button value='Faça aqui seu pedido' link='#' width={250} color={1}/>
             <p>Ou</p>
-            <Link to={'/cardapio'}>Acessar Cardápio</Link>
+            <Link to={'/aromas-do-nordeste-frontend/cardapio'}>Acessar Cardápio</Link>
         </>
         :
-        <Button value='Faça aqui seu pedido' link='#' width={250} color={1}/>}
+        <>
+            <Button value='Faça aqui seu pedido' link='#' width={250} color={1}/>
+            <Link to={'/aromas-do-nordeste-frontend/dashboard'}>Dashboard</Link>
+        </>
+        }
         </div>
     )
 }

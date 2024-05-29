@@ -21,7 +21,7 @@ const PlateItem = ({id, imageUrl, name, setData}) => {
         </div>
 
         <div className="buttons">
-            <Link className='btn Editar' to={`/dashboard/edit/${id}`}>Editar</Link>
+            <Link className='btn Editar' to={`/aromas-do-nordeste-frontend/dashboard/edit/${id}`}>Editar</Link>
             <a id='btnDeletar' className='btn Deletar' onClick={deletePlate}>Deletar</a>
         </div>
     </div>
