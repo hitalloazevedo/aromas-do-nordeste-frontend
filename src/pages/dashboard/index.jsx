@@ -31,7 +31,7 @@ const Dashboard = () => {
             </div>
             <div className="platesContainer">
                 {data != undefined ? data.map(plate => {
-                    return <PlateItem name={plate.name} id={plate.id} imageUrl={plate.imageUrl} description={plate.description} setData={setData}/>
+                    return <PlateItem name={plate.plate_name} id={plate.id} imageUrl={plate.image_url} description={plate.plate_description} setData={setData}/>
                 }) : ''}
             </div>
         </>
