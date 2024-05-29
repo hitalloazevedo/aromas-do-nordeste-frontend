@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = import.meta.env.VITE_API_URL
 
 const Cardapio = () => {
 
