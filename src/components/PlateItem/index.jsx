@@ -2,9 +2,9 @@ import axios from 'axios'
 import './style.css'
 import { Link } from 'react-router-dom'
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = import.meta.env.VITE_API_URL
 
-const PlateItem = ({id, imageUrl, name, description, setData}) => {
+const PlateItem = ({id, imageUrl, name, setData}) => {
 
     const deletePlate = (e) => {
         e.preventDefault()
@@ -21,7 +21,7 @@ const PlateItem = ({id, imageUrl, name, description, setData}) => {
         </div>
 
         <div className="buttons">
-            <Link className='btn Editar' to={`/dashboard/edit/${id}/${name}/${description}/${imageUrl}`}>Editar</Link>
+            <Link className='btn Editar' to={`/dashboard/edit/${id}`}>Editar</Link>
             <a id='btnDeletar' className='btn Deletar' onClick={deletePlate}>Deletar</a>
         </div>
     </div>
