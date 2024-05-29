@@ -1,6 +1,7 @@
 import Button from "../Button";
 import './style.css'
 import './media.css'
+import { Link } from "react-router-dom";
 
 const Footer = ({option}) => {
     return (
@@ -10,7 +11,7 @@ const Footer = ({option}) => {
         {option ? <>
             <Button value='Faça aqui seu pedido' link='#' width={250} color={1}/>
             <p>Ou</p>
-            <a href="#">Acessar Cardápio</a>
+            <Link to={'/cardapio'}>Acessar Cardápio</Link>
         </>
         :
         <Button value='Faça aqui seu pedido' link='#' width={250} color={1}/>}
