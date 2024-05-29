@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Dashboard/>
     },
     {
-        path: '/dashboard/edit/:id/:name/:description/:imageUrl',
+        path: '/dashboard/edit/:id',
         element: <EditPlate/>
     },
     {

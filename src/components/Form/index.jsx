@@ -1,18 +1,35 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './style.css'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = import.meta.env.VITE_API_URL
 
 const Form = ({operation}) => {
-    const {id, name, description, imageUrl} = useParams()
-    
-    const [plateId] = useState(operation == 'patch' ? id : '')
-    const [plateName, setPlateName] = useState(operation == 'patch' ? name : '')
-    const [plateDescription, setPlateDescription] = useState(operation == 'patch' ? description : '')
-    const [plateImageUrl, setPlateImageUrl] = useState(operation == 'patch' ? imageUrl : '')
+    const {id} = useParams()
+
+    const [plateId, setPlateId] = useState('')
+    const [plateName, setPlateName] = useState('')
+    const [plateDescription, setPlateDescription] = useState('')
+    const [plateImageUrl, setPlateImageUrl] = useState('')
     const [msg, setMsg] = useState('')
+    
+    const getPlates = async () => {
+        axios.get(`${baseUrl}/cardapio/${id}`).then(response => {
+            setPlateId(response.data[0].id)
+            setPlateName(response.data[0].plate_name)
+            setPlateDescription(response.data[0].plate_description)
+            setPlateImageUrl(response.data[0].image_url)
+        })
+    }
+    
+    useEffect(() => {
+        async function a(){
+            await getPlates()
+        }
+        a()
+    }, [])
+
 
     const insertNewPlate = (e) =>{
         e.preventDefault();
