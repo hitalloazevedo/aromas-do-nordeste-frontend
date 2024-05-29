@@ -19,6 +19,7 @@
     .scroll {
         background: url('../../assets/header800.png') no-repeat !important;
         background-size: cover;
+        height: 80px;
     }
 
     .activated {
@@ -46,6 +47,7 @@
     .scroll {
         background: url('../../assets/header1200.png') no-repeat !important;
         background-size: cover;
+        height: 80px;
     }
 
     .menu{
@@ -91,6 +93,7 @@
     .scroll {
         background: url('../../assets/header1200.png') no-repeat !important;
         background-size: cover;
+        height: 80px;
     }
 
     .menu {
@@ -189,6 +192,7 @@
     .scroll {
         background: url('../../assets/header1200.png') no-repeat !important;
         background-size: cover;
+        height: 80px;
     }
 }
 
@@ -208,5 +212,6 @@
     .scroll {
         background: url('../../assets/header2000.png') no-repeat !important;
         background-size: cover;
+        height: 80px;
     }
 }
