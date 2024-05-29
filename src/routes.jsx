@@ -11,19 +11,19 @@ const router = createBrowserRouter([
         element: <Home/>,
     },
     {
-        path: '/cardapio',
+        path: '/aromas-do-nordeste-frontend/cardapio',
         element: <Cardapio/>
     },
     {
-        path: '/dashboard',
+        path: '/aromas-do-nordeste-frontend/dashboard',
         element: <Dashboard/>
     },
     {
-        path: '/dashboard/edit/:id',
+        path: '/aromas-do-nordeste-frontend/dashboard/edit/:id',
         element: <EditPlate/>
     },
     {
-        path: '/dashboard/new',
+        path: '/aromas-do-nordeste-frontend/dashboard/new',
         element: <NewPlate/>
     }
 ])
