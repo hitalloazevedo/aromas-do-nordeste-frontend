@@ -7,7 +7,7 @@ import NewPlate from "./pages/newPlate";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/aromas-do-nordeste-frontend',
         element: <Home/>,
     },
     {
