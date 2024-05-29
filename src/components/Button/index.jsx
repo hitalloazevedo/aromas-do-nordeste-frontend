@@ -1,14 +1,9 @@
 import './style.css'
+import { Link } from 'react-router-dom'
 
 const Button = ({value, link, width = 200, color}) => {
     return (
-        <a 
-            className='button' 
-            href={link} 
-            style={{width: width, backgroundColor: color == 1 ? 'var(--translucid-white)' : 'var(--brown)'}}
-        >
-            {value}
-        </a>
+        <Link style={{width: width, backgroundColor: color == 1 ? 'var(--translucid-white)' : 'var(--brown)'}} className='button' to={link}>{value}</Link>
     )
 }
 
