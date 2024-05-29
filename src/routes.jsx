@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Cardapio from "./pages/cardapio";
 import Dashboard from "./pages/dashboard";
+import EditPlate from './pages/editPlate'
+import NewPlate from "./pages/newPlate";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
     {
         path: '/dashboard',
         element: <Dashboard/>
+    },
+    {
+        path: '/dashboard/edit/:id/:name/:description/:imageUrl',
+        element: <EditPlate/>
+    },
+    {
+        path: '/dashboard/new',
+        element: <NewPlate/>
     }
 ])
 
