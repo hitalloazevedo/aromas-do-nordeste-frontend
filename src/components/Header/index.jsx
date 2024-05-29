@@ -84,8 +84,8 @@ const Header = ({option}) => {
                 <nav>
                         {option ? 
                         <ul>
-                          <li><Link to={'/'} onClick={hideMenu} className={`link ${estadoNav}`}>Início</Link></li>
-                          <li><a href="#" onClick={hideMenu} className={`link ${estadoNav}`}>Fazer pedido</a></li>
+                          <li><Link to={'/aromas-do-nordeste-frontend'} onClick={hideMenu} className={`link ${estadoNav}`}>Início</Link></li>
+                          <li><a onClick={hideMenu} className={`link ${estadoNav}`}>Fazer pedido</a></li>
                         </ul>
                       : 
                       <ul>
