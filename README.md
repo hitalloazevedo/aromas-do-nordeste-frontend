@@ -5,7 +5,7 @@ Minha família possui raízes nordestinas, e essa foi a motivação para este pr
 
 O projeto consiste numa aplicação web para um restaurante, onde o principal objetivo é gerar uma identidade online, além da aprensentação do estabelecimento, a aplicação conta com um cardapio online.
 
-Veja a aplicação em <b> deploy </b>: [Aromas do nordeste](https://hitalloazevedo.github.io/aromas-do-nordeste-frontend/)
+Veja a aplicação em <b> deploy </b>: [Aromas do nordeste](https://hitalloazevedo.github.io/aromas-do-nordeste-frontend/) (por conta da hospedagem da api, o loading do cardapio pode levar até 50 segundos)
 
 
 ## Utilizando o projeto localmente
