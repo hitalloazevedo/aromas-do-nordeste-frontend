@@ -3,6 +3,8 @@ import './style.css'
 import './media.css'
 import { Link } from "react-router-dom";
 
+const environment = import.meta.env.development.VITE_ENVIRONMENT
+
 const Footer = ({option}) => {
     return (
         <div id="footer">
@@ -14,10 +16,12 @@ const Footer = ({option}) => {
             <Link to={'/aromas-do-nordeste-frontend/cardapio'}>Acessar Cardápio</Link>
         </>
         :
-        <>
             <Button value='Faça aqui seu pedido' link='#' width={250} color={1}/>
-            <Link to={'/aromas-do-nordeste-frontend/dashboard'}>Dashboard</Link>
-        </>
+        }
+        { environment == 'dev' ? 
+        <Link to={'/aromas-do-nordeste-frontend/dashboard'}>Dashboard</Link>
+        :
+        ''
         }
         </div>
     )
