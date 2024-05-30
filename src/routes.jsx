@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Cardapio from "./pages/cardapio";
 import Dashboard from "./pages/dashboard";
 import EditPlate from './pages/editPlate'
 import NewPlate from "./pages/newPlate";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/aromas-do-nordeste-frontend',
         element: <Home/>,
