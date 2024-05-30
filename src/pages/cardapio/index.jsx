@@ -6,19 +6,13 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 const baseUrl = import.meta.env.VITE_API_URL
-const env = import.meta.env.ENVIRONMENT
 
-const headers = {"Access-Control-Allow-Origin": "*"}
 const Cardapio = () => {
 
     const [data, setData] = useState()
     
     const getPlates = async () => {
-        axios.get(`${baseUrl}/cardapio`, {
-            headers: {
-                headers: env != 'dev' ? headers : ''
-            }
-        }).then(response => {
+        axios.get(`${baseUrl}/cardapio`).then(response => {
             console.log(response.data)
             setData(response.data)
         })

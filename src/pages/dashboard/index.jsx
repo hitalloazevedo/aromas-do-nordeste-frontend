@@ -5,18 +5,13 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const baseUrl = import.meta.env.VITE_API_URL
-const env = import.meta.env.ENVIRONMENT
-
-const headers = {"Access-Control-Allow-Origin": "*"}
 
 const Dashboard = () => {
 
     const [data, setData] = useState()
     
     const getPlates = async () => {
-        axios.get(`${baseUrl}/cardapio`, {
-            headers: env != 'dev' ? headers : ''
-        }).then(response => {
+        axios.get(`${baseUrl}/cardapio`).then(response => {
             setData(response.data)
         })
     }
