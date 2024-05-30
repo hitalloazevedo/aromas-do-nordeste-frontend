@@ -8,6 +8,28 @@ O projeto consiste numa aplicação web para um restaurante, onde o principal ob
 Veja a aplicação em <b> deploy </b>: [Aromas do nordeste](https://hitalloazevedo.github.io/aromas-do-nordeste-frontend/) (por conta da hospedagem da api, o loading do cardapio pode levar até 50 segundos)
 
 
+## Tecnologias e técnicas utilizadas
+
+- ReactJs
+- Css
+- Axios
+- Api's
+- Html
+- Vite
+- Roteamento
+- Responsividade com media queries
+
+## Features
+
+- Site responsivo (mobile até desktop).
+- Apresentação do restaurante.
+- Página de cardápio (renderizada dinamicamente).
+- Dashboard onde é possível gerenciar os pratos cadastrados (disponível localmente).
+  - Criar novo prato. 
+  - Alterar um prato existente.
+  - Deletar um prato.
+- Integração com web service que fornece os dados.
+
 ## Utilizando o projeto localmente
 #### Para utilizar a aplicação localmente é necessário configurar o web-service (api)
 [Configurar o web-service](https://github.com/hitalloazevedo/aromas-do-nordeste-backend)
@@ -50,29 +72,6 @@ Para utilizar o dashboard, crie o arquivo `.env.development` e adicione a variá
 
 - `VITE_ENVIRONMENT` com o valor `"dev"`
 
-
-## Features
-
-- Site responsivo (mobile até desktop).
-- Apresentação do restaurante.
-- Página de cardápio (renderizada dinamicamente).
-- Dashboard onde é possível gerenciar os pratos cadastrados (disponível localmente).
-    - Criar novo prato. 
-    - Alterar um prato existente.
-    - Deletar um prato.
-- Integração com web service que fornece os dados.
-
-
-## Tecnologias e técnicas utilizadas
-
-- ReactJs
-- Css
-- Axios
-- Api's
-- Html
-- Vite
-- Roteamento
-- Responsividade com media queries
 
 ## Referências de cores
 
