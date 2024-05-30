@@ -12,7 +12,11 @@ const Cardapio = () => {
     const [data, setData] = useState()
     
     const getPlates = async () => {
-        axios.get(`${baseUrl}/cardapio`).then(response => {
+        axios.get(`${baseUrl}/cardapio`, {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+            }
+        }).then(response => {
             console.log(response.data)
             setData(response.data)
         })
