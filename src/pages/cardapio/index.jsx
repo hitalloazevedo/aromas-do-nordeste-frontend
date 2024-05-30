@@ -14,10 +14,7 @@ const Cardapio = () => {
     const getPlates = async () => {
         axios.get(`${baseUrl}/cardapio`, {
             headers: {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "Authorization", 
-                "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, PATCH, DELETE" ,
-                "Content-Type": "application/json;charset=UTF-8"   
+                "Access-Control-Allow-Origin": "*"
             }
         }).then(response => {
             console.log(response.data)
