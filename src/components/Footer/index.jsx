@@ -3,7 +3,7 @@ import './style.css'
 import './media.css'
 import { Link } from "react-router-dom";
 
-const environment = import.meta.env.development.VITE_ENVIRONMENT
+const environment = import.meta.env.VITE_ENVIRONMENT
 
 const Footer = ({option}) => {
     return (
